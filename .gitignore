@@ -44,3 +44,4 @@ Thumbs.db
 hs_err_pid*
 replay_pid*
 >>>>>>> e3ea5300f1a747145d2e841bbfccb9eb08e64759
+/target/

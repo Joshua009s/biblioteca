@@ -33,8 +33,8 @@ public class menu {
               String autor = sc.nextLine();
               
               case 2:
-                  servicio.listarLibros();
-                  break;
+              servicio.listarLibros();
+              break;
           }
       } while(opcion!=3);
   }
