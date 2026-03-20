@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class bibliotecaService {
     private ArrayList<libro> libros= new ArrayList<>();
     
-    public void agragarLibros(String titulo, String autor){
+    public void agregarLibros(String titulo, String autor){
         libros.add(new libro(titulo, autor));
     }
     
