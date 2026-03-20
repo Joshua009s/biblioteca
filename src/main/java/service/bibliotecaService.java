@@ -4,10 +4,23 @@
  */
 package service;
 
+import model.libro;
+import java.util.ArrayList;
+
 /**
  *
  * @author joshu
  */
 public class bibliotecaService {
+    private ArrayList<libro> libros= new ArrayList<>();
     
+    public void agragarLibros(String titulo, String autor){
+        libros.add(new libro(titulo, autor));
+    }
+    
+    public void listarLibros(){
+        for(libro l: libros){
+           System.out.println(l.getTitulo()+" - " +l.getAutor()); 
+        }
+    }
 }
