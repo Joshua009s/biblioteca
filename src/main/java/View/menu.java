@@ -16,13 +16,14 @@ public class menu {
   public void iniciar(){
       int opcion;
       
+      
       do {          
           System.out.println("1. agregar libros");
           System.out.println("2. Listar Libros");
           System.out.println("3. salir");
           
           opcion = sc.nextInt();
-          sc.nextInt();
+          sc.nextLine();
           
           switch(opcion){
               case 1:
@@ -31,9 +32,12 @@ public class menu {
               
               System.out.println("Autor: ");
               String autor = sc.nextLine();
+              servicio.agregarLibros(titulo, autor);
+              System.out.println("\n");
               
               case 2:
               servicio.listarLibros();
+              System.out.println("\n");
               break;
           }
       } while(opcion!=3);
